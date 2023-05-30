@@ -84,7 +84,7 @@ const SongFeed = ({  }) => {
 
     const onSearch = () => {
         const searchTerm = search
-        const url = `http://ws.audioscrobbler.com/2.0/?method=track.search&track=${searchTerm}&api_key=7256f49ae9e240893e9ee2032b929e40&format=json`
+        const url = `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${searchTerm}&api_key=7256f49ae9e240893e9ee2032b929e40&format=json`
 
         const fetchFirstSong = async () => {
             const response = await axios.get(url)
